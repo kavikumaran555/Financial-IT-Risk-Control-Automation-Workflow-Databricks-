@@ -76,6 +76,8 @@ Table: final_risk_table
 
 ![Dashboard](./databricks_dashboard_showing_risk_classification.PNG)
 
+Finally, automated the workflow using Databricks Jobs section to refresh data daily at 9 AM IST.
+
 Contains:
 
 user activity
