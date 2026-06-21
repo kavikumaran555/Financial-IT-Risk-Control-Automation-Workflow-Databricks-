@@ -1,4 +1,4 @@
-Financial Risk Control Automation Workflow (Databricks)
+Financial IT Risk Control Automation Workflow (Databricks)
 Overview
 
 Simple financial risk analysis workflow using Databricks and PySpark.
@@ -9,73 +9,50 @@ system logs
 transactions data
 holdings data
 
-Goal:
-detect IT risk, banking risk, financial risk using login behavior + transaction activity
+Goal: detect IT risk, banking risk, financial risk using login behavior + transaction activity
 
 Step 1: Import libraries and load system log data
 
-load sys_logs_record table
-rename Location → Log_Location
 Step 2: Load transactions and holdings data
 
-load transactions_record
-load holdings_record
 Step 3: Analyze login activity and failures
 
-filter only Login actions
-create success / failure flags
-
-calculate:
-
-total_logins
-failed_logins
-avg_failure_per_login
-Step 4: Create mapping table (connect all datasets)
-
-generate:
-
-User_ID
-Transaction_ID
-Portfolio_ID
-
-helps join all 3 datasets
+Step 4: Create mapping table
 
 Step 5: Join all datasets
 
-join logs + mapping + transactions + holdings
-create one combined dataset
-Step 6: Add login risk metrics
-left join with login result using IP_Address
+Step 6: Risk logic
 
-adds:
+Step 7: Final output table creation
 
-total_logins
-failed_logins
-avg_failure_per_login
-Step 7: Risk classification logic
+Step 8: Visualizations
+Risk volume
 
-Rules:
+By location
 
-CRITICAL → high failures + high trade amount
-HIGH → high failures
-MEDIUM → high asset risk
-LOW → others
-Step 8: Create final output table
+By device type
 
-select important columns
-remove duplicates
-save as table: final_risk_table
-Step 9: Risk visualization
-Overall risk volume
+By merchant type
 
-Risk by location
+By asset type
 
-Risk by device type
+By sector
 
-Risk by merchant type
+By user
 
-Risk by asset type
+Final Output
 
-Risk by sector
+Table: final_risk_table
 
-Risk by user
+Contains:
+
+user activity
+transaction data
+holdings data
+calculated risk level
+Summary
+automated workflow
+joins 3 datasets
+detects IT + financial risk
+rule-based risk scoring
+ready for dashboard use
