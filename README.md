@@ -13,6 +13,8 @@ Goal: detect IT risk, banking risk, financial risk using login behavior + transa
 
 Step 1: Import libraries and load system log data
 
+![Step 1](./importing_libraries_and_creating_spark_dataframe_for_sys_log_dataset_in_databricks_notebook.PNG)
+
 Step 2: Load transactions and holdings data
 
 Step 3: Analyze login activity and failures
