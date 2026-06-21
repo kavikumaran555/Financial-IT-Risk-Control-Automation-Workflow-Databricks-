@@ -1,0 +1,2 @@
+# Financial-IT-Risk-Control-Automation-Workflow-Databricks-
+A Databricks-based automated workflow for analyzing banking, IT, and financial risks. The project combines logs, transactions, and holdings data to generate risk insights using PySpark. It includes automated data processing, behavioral analysis, and rule-based risk classification to produce a final risk table for reporting and monitoring.
