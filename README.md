@@ -74,6 +74,8 @@ Final Output
 
 Table: final_risk_table
 
+![Dashboard](./databricks_dashboard_showing_risk_classification.PNG)
+
 Contains:
 
 user activity
